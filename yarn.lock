@@ -178,6 +178,11 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
+guid@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/guid/-/guid-0.0.12.tgz#9137c52b185f7de12490b9bebcc1660b9025fe0c"
+  integrity sha1-kTfFKxhffeEkkLm+vMFmC5Al/gw=
+
 http-errors@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.7.2.tgz#4f5029cf13239f31036e5b2e55292bcfbcc85c8f"

@@ -8,4 +8,4 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 require('./controllers/authController')(app)
 
-app.listen(process.env.port || 3000)
+app.listen(process.env.port || 8000)

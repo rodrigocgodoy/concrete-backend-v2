@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const UserSchema = new mongoose.Schema({
-    // id_guid: String,
+    id_guid: String,
     nome: {
         type: String,
         require: true
@@ -27,5 +27,5 @@ const UserSchema = new mongoose.Schema({
 })
 
 const User = mongoose.model('User', UserSchema)
-console.log("Entrou model user")
+
 module.exports = User
