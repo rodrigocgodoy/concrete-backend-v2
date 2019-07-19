@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+var Schema = mongoose.Schema;
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
     id_guid: String,
     nome: {
         type: String,
@@ -19,6 +20,16 @@ const UserSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
+    },
+    telefone: {
+        numero: {
+            type: String,
+            require: true
+        },
+        ddd: {
+            type: String,
+            require: true
+        },
     }
     // telefones: {
     //     numero: Number,
@@ -26,6 +37,6 @@ const UserSchema = new mongoose.Schema({
     // }
 })
 
-const User = mongoose.model('User', UserSchema)
+const User = mongoose.model('users', UserSchema)
 
 module.exports = User
