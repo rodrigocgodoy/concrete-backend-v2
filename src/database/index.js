@@ -1,15 +1,11 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0-zzwsc.mongodb.net/concrete-backend', { useMongoClient: true, useNewUrlParser: true })
-// mongoose.connect('mongodb://localhost:27017/concrete-backend', { 
-//     // useMongoClient: true,
-//     useNewUrlParser: true
-// })
-.then(() => {
-    console.log("Banco de dados conectado")
-}).catch((err) => {
-    console.log("Erro ao conectar no banco de dados " + err)
-})
-mongoose.Promise = global.Promise
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb+srv://admin:admin@cluster0-zzwsc.mongodb.net/concrete-backend', { useNewUrlParser: true })
+    .then(() => {
+        console.log("MongoBD conectado com sucesso")
+    }).catch((error) => {
+        console.log(`Hove um erro ao se conectar ao mongoDB: ${error}`)
+    })
 
 module.exports = mongoose
