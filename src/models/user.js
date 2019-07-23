@@ -19,12 +19,12 @@ const UserSchema = new Schema({
         type: String,
         require: true,
         lowercase: true,
-        unique: true
+        // unique: true
     },
     senha: {
         type: String,
         require: true,
-        select: false
+        // select: false
     },
     telefone: {
         numero: {
@@ -41,7 +41,8 @@ const UserSchema = new Schema({
         default: dateSaoPaulo
     },
     data_autualizacao: {
-        type: Date
+        type: Date,
+        default: dateSaoPaulo
     },
     ultimo_login: {
         type: Date,
